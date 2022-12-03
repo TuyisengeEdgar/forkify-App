@@ -40,6 +40,7 @@ const controlResearchResults = async function () {
     resultView.renderSpinner();
     // 1)Get search query
     const query = searchView.getQuery();
+    console.log(query);
     if (!query) return;
     // 2) Load search the query
     await model.loadSearchResults(query);
